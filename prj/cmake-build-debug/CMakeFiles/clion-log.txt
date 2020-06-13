@@ -1,0 +1,4 @@
+/home/olga/Pobrane/CLion-2019.3.4/clion-2019.3.4/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_C_COMPILER=/usr/bin/gcc -DCMAKE_CXX_COMPILER=/usr/bin/g++ -G "CodeBlocks - Unix Makefiles" /home/olga/Pulpit/Programowanie/dron/prj
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/olga/Pulpit/Programowanie/dron/prj/cmake-build-debug
