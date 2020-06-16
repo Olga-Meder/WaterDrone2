@@ -6,5 +6,5 @@ CXX_FLAGS = -g
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/olga/Pulpit/Programowanie/dron/prj/inc 
+CXX_INCLUDES = -I/home/olga/Pulpit/Programowanie/dron2/prj/inc 
 

@@ -1,15 +1,18 @@
-/*#pragma once
+#pragma once
 
 #include "Matrix.hh"
 
-class MatrixRot
+
+class MatrixRot: public Matrix3D
 {
-protected:
-    Matrix3D matrix_rot;
 public:
-    void rotateX(const double angle);
-    void rotateY(const double angle);
-    void rotateZ(const double angle);
 
+/**
+ * @brief metoda, która tworzy macierz rotacji, potrzebną do obrotu bryły
+ *
+ * @param axis - oś obrotu, X,Y,Z
+ * @param angle - kąt obrotu
+ */
+    MatrixRot(const char axis, const double &angle);
 
-}; */
+};

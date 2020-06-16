@@ -1,24 +1,18 @@
 #pragma once
 
-#include <vector>
+#include "obstacle.hh"
 #include <string>
-#include "Vector.hh"
-#include "Matrix.hh"
-#include "mainObject.hh"
 
-
-class Solid: public MainObject{
-
-
+const std::string kModelSolid("solid/model.dat"); //zmienić to później na inny prostopadłościan
+class Solid: public Obstacle
+{
+    //klasa bryła, która ma za zadanie zostać nazwana i narysowana (później kolizja)
 public:
-    Solid() {}; //konstruktor
-    ~Solid() {}; //destruktor
-    void translate(const Vector3D& change)
+    Solid();
+    virtual ~Solid() {};
+    virtual void getName() const override
     {
-        translation = translation + change;
+        std::cout<< "Bryła";
     }
-    void rotateX( double angle);
-    void rotateY( double angle);
-    void rotateZ( double angle);
-    Matrix3D matrix_rot;
+    virtual void draw(std::string filename) const override;
 };

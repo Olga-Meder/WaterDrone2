@@ -178,17 +178,30 @@ Matrix<T,SIZE> Matrix<T,SIZE>::ReplaceColumn(Vector<T,SIZE> v, int index) const
     copy.data[index]=v;
     return copy;
 }
+
 template <typename T,int SIZE>
 Vector<T,SIZE> Matrix<T,SIZE>:: operator * (Vector<T,SIZE> v)
 {
-    Vector<T,SIZE> result;
-    for(int i=0; i<SIZE;i++)
+    Vector<T, SIZE> result;
+    //KOPIOWANIE DANYCH DO TABLICY TYMCZASOWEJ
+    T copy[SIZE][SIZE];
+    for(int i=0;i<SIZE;i++)
     {
-        for(int j=0;j<SIZE;j++)
+        for(int n=0;n<SIZE;n++)
         {
-            result[i]+=v[j]* (*this)(i,j);
-        }
+            copy[i][n]=data[i][n];
 
+        }
+    }
+    for (int i = 0; i < SIZE; i++)
+    {
+//        result[i]=0;
+        for (int j = 0; j < SIZE; j++)
+        {
+            result[i]= result[i] + v[j] * copy[i][j];
+        }
     }
     return result;
 }
+
+

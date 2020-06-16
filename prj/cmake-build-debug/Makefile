@@ -48,10 +48,10 @@ RM = /home/olga/Pobrane/CLion-2019.3.4/clion-2019.3.4/bin/cmake/linux/bin/cmake 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/olga/Pulpit/Programowanie/dron/prj
+CMAKE_SOURCE_DIR = /home/olga/Pulpit/Programowanie/dron2/prj
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/olga/Pulpit/Programowanie/dron/prj/cmake-build-debug
+CMAKE_BINARY_DIR = /home/olga/Pulpit/Programowanie/dron2/prj/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/olga/Pulpit/Programowanie/dron/prj/cmake-build-debug/CMakeFiles /home/olga/Pulpit/Programowanie/dron/prj/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/olga/Pulpit/Programowanie/dron2/prj/cmake-build-debug/CMakeFiles /home/olga/Pulpit/Programowanie/dron2/prj/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/olga/Pulpit/Programowanie/dron/prj/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/olga/Pulpit/Programowanie/dron2/prj/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -122,6 +122,33 @@ project_name: cmake_check_build_system
 project_name/fast:
 	$(MAKE) -f CMakeFiles/project_name.dir/build.make CMakeFiles/project_name.dir/build
 .PHONY : project_name/fast
+
+src/MatrixRot.o: src/MatrixRot.cpp.o
+
+.PHONY : src/MatrixRot.o
+
+# target to build an object file
+src/MatrixRot.cpp.o:
+	$(MAKE) -f CMakeFiles/project_name.dir/build.make CMakeFiles/project_name.dir/src/MatrixRot.cpp.o
+.PHONY : src/MatrixRot.cpp.o
+
+src/MatrixRot.i: src/MatrixRot.cpp.i
+
+.PHONY : src/MatrixRot.i
+
+# target to preprocess a source file
+src/MatrixRot.cpp.i:
+	$(MAKE) -f CMakeFiles/project_name.dir/build.make CMakeFiles/project_name.dir/src/MatrixRot.cpp.i
+.PHONY : src/MatrixRot.cpp.i
+
+src/MatrixRot.s: src/MatrixRot.cpp.s
+
+.PHONY : src/MatrixRot.s
+
+# target to generate assembly for a file
+src/MatrixRot.cpp.s:
+	$(MAKE) -f CMakeFiles/project_name.dir/build.make CMakeFiles/project_name.dir/src/MatrixRot.cpp.s
+.PHONY : src/MatrixRot.cpp.s
 
 src/bottom.o: src/bottom.cpp.o
 
@@ -258,32 +285,86 @@ src/mainObject.cpp.s:
 	$(MAKE) -f CMakeFiles/project_name.dir/build.make CMakeFiles/project_name.dir/src/mainObject.cpp.s
 .PHONY : src/mainObject.cpp.s
 
-src/scene.o: src/scene.cpp.o
+src/obstacle.o: src/obstacle.cpp.o
 
-.PHONY : src/scene.o
+.PHONY : src/obstacle.o
 
 # target to build an object file
-src/scene.cpp.o:
-	$(MAKE) -f CMakeFiles/project_name.dir/build.make CMakeFiles/project_name.dir/src/scene.cpp.o
-.PHONY : src/scene.cpp.o
+src/obstacle.cpp.o:
+	$(MAKE) -f CMakeFiles/project_name.dir/build.make CMakeFiles/project_name.dir/src/obstacle.cpp.o
+.PHONY : src/obstacle.cpp.o
 
-src/scene.i: src/scene.cpp.i
+src/obstacle.i: src/obstacle.cpp.i
 
-.PHONY : src/scene.i
+.PHONY : src/obstacle.i
 
 # target to preprocess a source file
-src/scene.cpp.i:
-	$(MAKE) -f CMakeFiles/project_name.dir/build.make CMakeFiles/project_name.dir/src/scene.cpp.i
-.PHONY : src/scene.cpp.i
+src/obstacle.cpp.i:
+	$(MAKE) -f CMakeFiles/project_name.dir/build.make CMakeFiles/project_name.dir/src/obstacle.cpp.i
+.PHONY : src/obstacle.cpp.i
 
-src/scene.s: src/scene.cpp.s
+src/obstacle.s: src/obstacle.cpp.s
 
-.PHONY : src/scene.s
+.PHONY : src/obstacle.s
 
 # target to generate assembly for a file
-src/scene.cpp.s:
-	$(MAKE) -f CMakeFiles/project_name.dir/build.make CMakeFiles/project_name.dir/src/scene.cpp.s
-.PHONY : src/scene.cpp.s
+src/obstacle.cpp.s:
+	$(MAKE) -f CMakeFiles/project_name.dir/build.make CMakeFiles/project_name.dir/src/obstacle.cpp.s
+.PHONY : src/obstacle.cpp.s
+
+src/rectangle.o: src/rectangle.cpp.o
+
+.PHONY : src/rectangle.o
+
+# target to build an object file
+src/rectangle.cpp.o:
+	$(MAKE) -f CMakeFiles/project_name.dir/build.make CMakeFiles/project_name.dir/src/rectangle.cpp.o
+.PHONY : src/rectangle.cpp.o
+
+src/rectangle.i: src/rectangle.cpp.i
+
+.PHONY : src/rectangle.i
+
+# target to preprocess a source file
+src/rectangle.cpp.i:
+	$(MAKE) -f CMakeFiles/project_name.dir/build.make CMakeFiles/project_name.dir/src/rectangle.cpp.i
+.PHONY : src/rectangle.cpp.i
+
+src/rectangle.s: src/rectangle.cpp.s
+
+.PHONY : src/rectangle.s
+
+# target to generate assembly for a file
+src/rectangle.cpp.s:
+	$(MAKE) -f CMakeFiles/project_name.dir/build.make CMakeFiles/project_name.dir/src/rectangle.cpp.s
+.PHONY : src/rectangle.cpp.s
+
+src/rod.o: src/rod.cpp.o
+
+.PHONY : src/rod.o
+
+# target to build an object file
+src/rod.cpp.o:
+	$(MAKE) -f CMakeFiles/project_name.dir/build.make CMakeFiles/project_name.dir/src/rod.cpp.o
+.PHONY : src/rod.cpp.o
+
+src/rod.i: src/rod.cpp.i
+
+.PHONY : src/rod.i
+
+# target to preprocess a source file
+src/rod.cpp.i:
+	$(MAKE) -f CMakeFiles/project_name.dir/build.make CMakeFiles/project_name.dir/src/rod.cpp.i
+.PHONY : src/rod.cpp.i
+
+src/rod.s: src/rod.cpp.s
+
+.PHONY : src/rod.s
+
+# target to generate assembly for a file
+src/rod.cpp.s:
+	$(MAKE) -f CMakeFiles/project_name.dir/build.make CMakeFiles/project_name.dir/src/rod.cpp.s
+.PHONY : src/rod.cpp.s
 
 src/solid.o: src/solid.cpp.o
 
@@ -348,6 +429,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... project_name"
 	@echo "... edit_cache"
+	@echo "... src/MatrixRot.o"
+	@echo "... src/MatrixRot.i"
+	@echo "... src/MatrixRot.s"
 	@echo "... src/bottom.o"
 	@echo "... src/bottom.i"
 	@echo "... src/bottom.s"
@@ -363,9 +447,15 @@ help:
 	@echo "... src/mainObject.o"
 	@echo "... src/mainObject.i"
 	@echo "... src/mainObject.s"
-	@echo "... src/scene.o"
-	@echo "... src/scene.i"
-	@echo "... src/scene.s"
+	@echo "... src/obstacle.o"
+	@echo "... src/obstacle.i"
+	@echo "... src/obstacle.s"
+	@echo "... src/rectangle.o"
+	@echo "... src/rectangle.i"
+	@echo "... src/rectangle.s"
+	@echo "... src/rod.o"
+	@echo "... src/rod.i"
+	@echo "... src/rod.s"
 	@echo "... src/solid.o"
 	@echo "... src/solid.i"
 	@echo "... src/solid.s"

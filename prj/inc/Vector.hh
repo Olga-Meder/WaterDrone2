@@ -18,6 +18,8 @@ class Vector
 {
     T data[SIZE]; //wektor z rozwiązaniami
 public:
+    //KONSTRUKTOR
+    Vector();
 
     //PRZECIAZENIA OPERATOROW
 
@@ -135,3 +137,11 @@ T &Vector<T,SIZE> ::operator[](int index)
     return const_cast<T &>(const_cast<const Vector<T,SIZE> *>(this)->operator[](index));
 }
 
+template<typename T, int SIZE>
+Vector<T, SIZE>::Vector()
+{
+    for (int i = 0; i < SIZE; ++i)
+    {
+        data[i]=0;
+    }
+}

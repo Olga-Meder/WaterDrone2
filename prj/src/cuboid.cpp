@@ -1,12 +1,13 @@
 #include "cuboid.hh"
 #include <fstream>
 #include <iostream>
-#include "Matrix.hh"
-
+#include "bottom.hh"
+#include "water.hh"
 using namespace std;
 
+int MainObject::counter =0;
 
-Cuboid::Cuboid()
+Cuboid::Cuboid() // wczytanie pliku modelowego
 {
     ifstream inputFile;
     inputFile.open(kModelCuboid);
@@ -21,33 +22,14 @@ Cuboid::Cuboid()
     while(inputFile >> point)
     {
         points.push_back(point); //tutaj points
+        ++counter; //dodawanie wektorów
     }
     inputFile.close();
 }
 
+
 void Cuboid::draw(std::string filename) const
 {
-    /*********************************************/
-    Matrix3D matrix_rot;
-    double angle=45;
-    double radians= angle *(3,1415/180);
-    matrix_rot(0, 0) = cos(radians);
-    matrix_rot(0, 1) = -sin(radians);
-    matrix_rot(0, 2) = 0;
-    matrix_rot(1, 0) = sin(radians);
-    matrix_rot(1, 1) = cos(radians);
-    matrix_rot(1, 2) = 0;
-    matrix_rot(2, 0) = 0;
-    matrix_rot(2, 1) = 0;
-    matrix_rot(2, 2) = 1;
-
-    for(int i=0;i<points.size();i++)
-    {
-      //  points[i]= matrix_rot*points[i]; //nie ma przypisania ?
-
-    }
-    /********************************************/
-
     ofstream outputFile;
     outputFile.open(filename);
     if(!outputFile.is_open())
@@ -57,10 +39,65 @@ void Cuboid::draw(std::string filename) const
     }
     for(int i = 0; i < points.size(); ++i)
     {
-        outputFile <<points[i]+ translation; //pomnożyć to przez macierz?
+        outputFile << points[i]+ translation;
         if(i % 4 == 3) // triggers after every 4 points
         {
             outputFile << "#\n\n";
         }
+    }
+}
+
+void Cuboid::rotateZ(double angle)
+{
+
+    MatrixRot rot_matrix('Z',angle);
+    rot_matrix.transpose(); //w szablonie zapisuje macierz transponowaną, tutaj muszę odwrócić
+    for (int i = 0; i < points.size(); ++i)
+    {
+     //   cout<<rot_matrix<<endl;
+     //cout<<points[i];
+        points[i] = rot_matrix * points[i];
+     //   cout<<points[i];
+    }
+}
+
+/*void Cuboid::rotateY(double kat) {
+
+    MatrixRot rot_matrix('Y', kat);
+ //   rot_matrix.transpose();
+    for (int i = 0; i < points.size(); ++i) {
+
+        cout << points[i];
+        points[i] = rot_matrix * points[i];
+        cout << points[i];
+    }
+}
+
+void Cuboid::rotateX(double kat) {
+
+    MatrixRot rot_matrix('X', kat);
+ //   rot_matrix.transpose();
+    for (int i = 0; i < points.size(); ++i) {
+
+        cout << points[i];
+        points[i] = rot_matrix * points[i];
+        cout << points[i];
+    }
+} */
+int Cuboid::checkCollision()
+{
+    Bottom b;
+    Water w;
+    int result;
+   // cout<< translation;
+    if (translation[2] <= b.getDepth()+20) //te punkty wyznaczone doświadczalnie
+    {
+        result=1;
+        return result;
+    }
+    else if(translation[2]>= w.getHeight()-5)
+    {
+        result=2;
+        return result;
     }
 }

@@ -43,10 +43,10 @@ RM = /home/olga/Pobrane/CLion-2019.3.4/clion-2019.3.4/bin/cmake/linux/bin/cmake 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/olga/Pulpit/Programowanie/dron/prj
+CMAKE_SOURCE_DIR = /home/olga/Pulpit/Programowanie/dron2/prj
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/olga/Pulpit/Programowanie/dron/prj/cmake-build-debug
+CMAKE_BINARY_DIR = /home/olga/Pulpit/Programowanie/dron2/prj/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/project_name.dir/depend.make
@@ -57,135 +57,180 @@ include CMakeFiles/project_name.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/project_name.dir/flags.make
 
+CMakeFiles/project_name.dir/src/MatrixRot.cpp.o: CMakeFiles/project_name.dir/flags.make
+CMakeFiles/project_name.dir/src/MatrixRot.cpp.o: ../src/MatrixRot.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/olga/Pulpit/Programowanie/dron2/prj/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/project_name.dir/src/MatrixRot.cpp.o"
+	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/project_name.dir/src/MatrixRot.cpp.o -c /home/olga/Pulpit/Programowanie/dron2/prj/src/MatrixRot.cpp
+
+CMakeFiles/project_name.dir/src/MatrixRot.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/project_name.dir/src/MatrixRot.cpp.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/olga/Pulpit/Programowanie/dron2/prj/src/MatrixRot.cpp > CMakeFiles/project_name.dir/src/MatrixRot.cpp.i
+
+CMakeFiles/project_name.dir/src/MatrixRot.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/project_name.dir/src/MatrixRot.cpp.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/olga/Pulpit/Programowanie/dron2/prj/src/MatrixRot.cpp -o CMakeFiles/project_name.dir/src/MatrixRot.cpp.s
+
 CMakeFiles/project_name.dir/src/bottom.cpp.o: CMakeFiles/project_name.dir/flags.make
 CMakeFiles/project_name.dir/src/bottom.cpp.o: ../src/bottom.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/olga/Pulpit/Programowanie/dron/prj/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/project_name.dir/src/bottom.cpp.o"
-	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/project_name.dir/src/bottom.cpp.o -c /home/olga/Pulpit/Programowanie/dron/prj/src/bottom.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/olga/Pulpit/Programowanie/dron2/prj/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/project_name.dir/src/bottom.cpp.o"
+	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/project_name.dir/src/bottom.cpp.o -c /home/olga/Pulpit/Programowanie/dron2/prj/src/bottom.cpp
 
 CMakeFiles/project_name.dir/src/bottom.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/project_name.dir/src/bottom.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/olga/Pulpit/Programowanie/dron/prj/src/bottom.cpp > CMakeFiles/project_name.dir/src/bottom.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/olga/Pulpit/Programowanie/dron2/prj/src/bottom.cpp > CMakeFiles/project_name.dir/src/bottom.cpp.i
 
 CMakeFiles/project_name.dir/src/bottom.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/project_name.dir/src/bottom.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/olga/Pulpit/Programowanie/dron/prj/src/bottom.cpp -o CMakeFiles/project_name.dir/src/bottom.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/olga/Pulpit/Programowanie/dron2/prj/src/bottom.cpp -o CMakeFiles/project_name.dir/src/bottom.cpp.s
 
 CMakeFiles/project_name.dir/src/cuboid.cpp.o: CMakeFiles/project_name.dir/flags.make
 CMakeFiles/project_name.dir/src/cuboid.cpp.o: ../src/cuboid.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/olga/Pulpit/Programowanie/dron/prj/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/project_name.dir/src/cuboid.cpp.o"
-	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/project_name.dir/src/cuboid.cpp.o -c /home/olga/Pulpit/Programowanie/dron/prj/src/cuboid.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/olga/Pulpit/Programowanie/dron2/prj/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/project_name.dir/src/cuboid.cpp.o"
+	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/project_name.dir/src/cuboid.cpp.o -c /home/olga/Pulpit/Programowanie/dron2/prj/src/cuboid.cpp
 
 CMakeFiles/project_name.dir/src/cuboid.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/project_name.dir/src/cuboid.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/olga/Pulpit/Programowanie/dron/prj/src/cuboid.cpp > CMakeFiles/project_name.dir/src/cuboid.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/olga/Pulpit/Programowanie/dron2/prj/src/cuboid.cpp > CMakeFiles/project_name.dir/src/cuboid.cpp.i
 
 CMakeFiles/project_name.dir/src/cuboid.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/project_name.dir/src/cuboid.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/olga/Pulpit/Programowanie/dron/prj/src/cuboid.cpp -o CMakeFiles/project_name.dir/src/cuboid.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/olga/Pulpit/Programowanie/dron2/prj/src/cuboid.cpp -o CMakeFiles/project_name.dir/src/cuboid.cpp.s
 
 CMakeFiles/project_name.dir/src/gnuplot_link.cpp.o: CMakeFiles/project_name.dir/flags.make
 CMakeFiles/project_name.dir/src/gnuplot_link.cpp.o: ../src/gnuplot_link.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/olga/Pulpit/Programowanie/dron/prj/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/project_name.dir/src/gnuplot_link.cpp.o"
-	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/project_name.dir/src/gnuplot_link.cpp.o -c /home/olga/Pulpit/Programowanie/dron/prj/src/gnuplot_link.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/olga/Pulpit/Programowanie/dron2/prj/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/project_name.dir/src/gnuplot_link.cpp.o"
+	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/project_name.dir/src/gnuplot_link.cpp.o -c /home/olga/Pulpit/Programowanie/dron2/prj/src/gnuplot_link.cpp
 
 CMakeFiles/project_name.dir/src/gnuplot_link.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/project_name.dir/src/gnuplot_link.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/olga/Pulpit/Programowanie/dron/prj/src/gnuplot_link.cpp > CMakeFiles/project_name.dir/src/gnuplot_link.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/olga/Pulpit/Programowanie/dron2/prj/src/gnuplot_link.cpp > CMakeFiles/project_name.dir/src/gnuplot_link.cpp.i
 
 CMakeFiles/project_name.dir/src/gnuplot_link.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/project_name.dir/src/gnuplot_link.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/olga/Pulpit/Programowanie/dron/prj/src/gnuplot_link.cpp -o CMakeFiles/project_name.dir/src/gnuplot_link.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/olga/Pulpit/Programowanie/dron2/prj/src/gnuplot_link.cpp -o CMakeFiles/project_name.dir/src/gnuplot_link.cpp.s
 
 CMakeFiles/project_name.dir/src/main.cpp.o: CMakeFiles/project_name.dir/flags.make
 CMakeFiles/project_name.dir/src/main.cpp.o: ../src/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/olga/Pulpit/Programowanie/dron/prj/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/project_name.dir/src/main.cpp.o"
-	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/project_name.dir/src/main.cpp.o -c /home/olga/Pulpit/Programowanie/dron/prj/src/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/olga/Pulpit/Programowanie/dron2/prj/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/project_name.dir/src/main.cpp.o"
+	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/project_name.dir/src/main.cpp.o -c /home/olga/Pulpit/Programowanie/dron2/prj/src/main.cpp
 
 CMakeFiles/project_name.dir/src/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/project_name.dir/src/main.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/olga/Pulpit/Programowanie/dron/prj/src/main.cpp > CMakeFiles/project_name.dir/src/main.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/olga/Pulpit/Programowanie/dron2/prj/src/main.cpp > CMakeFiles/project_name.dir/src/main.cpp.i
 
 CMakeFiles/project_name.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/project_name.dir/src/main.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/olga/Pulpit/Programowanie/dron/prj/src/main.cpp -o CMakeFiles/project_name.dir/src/main.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/olga/Pulpit/Programowanie/dron2/prj/src/main.cpp -o CMakeFiles/project_name.dir/src/main.cpp.s
 
 CMakeFiles/project_name.dir/src/mainObject.cpp.o: CMakeFiles/project_name.dir/flags.make
 CMakeFiles/project_name.dir/src/mainObject.cpp.o: ../src/mainObject.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/olga/Pulpit/Programowanie/dron/prj/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/project_name.dir/src/mainObject.cpp.o"
-	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/project_name.dir/src/mainObject.cpp.o -c /home/olga/Pulpit/Programowanie/dron/prj/src/mainObject.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/olga/Pulpit/Programowanie/dron2/prj/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/project_name.dir/src/mainObject.cpp.o"
+	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/project_name.dir/src/mainObject.cpp.o -c /home/olga/Pulpit/Programowanie/dron2/prj/src/mainObject.cpp
 
 CMakeFiles/project_name.dir/src/mainObject.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/project_name.dir/src/mainObject.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/olga/Pulpit/Programowanie/dron/prj/src/mainObject.cpp > CMakeFiles/project_name.dir/src/mainObject.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/olga/Pulpit/Programowanie/dron2/prj/src/mainObject.cpp > CMakeFiles/project_name.dir/src/mainObject.cpp.i
 
 CMakeFiles/project_name.dir/src/mainObject.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/project_name.dir/src/mainObject.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/olga/Pulpit/Programowanie/dron/prj/src/mainObject.cpp -o CMakeFiles/project_name.dir/src/mainObject.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/olga/Pulpit/Programowanie/dron2/prj/src/mainObject.cpp -o CMakeFiles/project_name.dir/src/mainObject.cpp.s
 
-CMakeFiles/project_name.dir/src/scene.cpp.o: CMakeFiles/project_name.dir/flags.make
-CMakeFiles/project_name.dir/src/scene.cpp.o: ../src/scene.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/olga/Pulpit/Programowanie/dron/prj/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/project_name.dir/src/scene.cpp.o"
-	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/project_name.dir/src/scene.cpp.o -c /home/olga/Pulpit/Programowanie/dron/prj/src/scene.cpp
+CMakeFiles/project_name.dir/src/obstacle.cpp.o: CMakeFiles/project_name.dir/flags.make
+CMakeFiles/project_name.dir/src/obstacle.cpp.o: ../src/obstacle.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/olga/Pulpit/Programowanie/dron2/prj/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/project_name.dir/src/obstacle.cpp.o"
+	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/project_name.dir/src/obstacle.cpp.o -c /home/olga/Pulpit/Programowanie/dron2/prj/src/obstacle.cpp
 
-CMakeFiles/project_name.dir/src/scene.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/project_name.dir/src/scene.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/olga/Pulpit/Programowanie/dron/prj/src/scene.cpp > CMakeFiles/project_name.dir/src/scene.cpp.i
+CMakeFiles/project_name.dir/src/obstacle.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/project_name.dir/src/obstacle.cpp.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/olga/Pulpit/Programowanie/dron2/prj/src/obstacle.cpp > CMakeFiles/project_name.dir/src/obstacle.cpp.i
 
-CMakeFiles/project_name.dir/src/scene.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/project_name.dir/src/scene.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/olga/Pulpit/Programowanie/dron/prj/src/scene.cpp -o CMakeFiles/project_name.dir/src/scene.cpp.s
+CMakeFiles/project_name.dir/src/obstacle.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/project_name.dir/src/obstacle.cpp.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/olga/Pulpit/Programowanie/dron2/prj/src/obstacle.cpp -o CMakeFiles/project_name.dir/src/obstacle.cpp.s
+
+CMakeFiles/project_name.dir/src/rectangle.cpp.o: CMakeFiles/project_name.dir/flags.make
+CMakeFiles/project_name.dir/src/rectangle.cpp.o: ../src/rectangle.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/olga/Pulpit/Programowanie/dron2/prj/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/project_name.dir/src/rectangle.cpp.o"
+	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/project_name.dir/src/rectangle.cpp.o -c /home/olga/Pulpit/Programowanie/dron2/prj/src/rectangle.cpp
+
+CMakeFiles/project_name.dir/src/rectangle.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/project_name.dir/src/rectangle.cpp.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/olga/Pulpit/Programowanie/dron2/prj/src/rectangle.cpp > CMakeFiles/project_name.dir/src/rectangle.cpp.i
+
+CMakeFiles/project_name.dir/src/rectangle.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/project_name.dir/src/rectangle.cpp.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/olga/Pulpit/Programowanie/dron2/prj/src/rectangle.cpp -o CMakeFiles/project_name.dir/src/rectangle.cpp.s
+
+CMakeFiles/project_name.dir/src/rod.cpp.o: CMakeFiles/project_name.dir/flags.make
+CMakeFiles/project_name.dir/src/rod.cpp.o: ../src/rod.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/olga/Pulpit/Programowanie/dron2/prj/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/project_name.dir/src/rod.cpp.o"
+	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/project_name.dir/src/rod.cpp.o -c /home/olga/Pulpit/Programowanie/dron2/prj/src/rod.cpp
+
+CMakeFiles/project_name.dir/src/rod.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/project_name.dir/src/rod.cpp.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/olga/Pulpit/Programowanie/dron2/prj/src/rod.cpp > CMakeFiles/project_name.dir/src/rod.cpp.i
+
+CMakeFiles/project_name.dir/src/rod.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/project_name.dir/src/rod.cpp.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/olga/Pulpit/Programowanie/dron2/prj/src/rod.cpp -o CMakeFiles/project_name.dir/src/rod.cpp.s
 
 CMakeFiles/project_name.dir/src/solid.cpp.o: CMakeFiles/project_name.dir/flags.make
 CMakeFiles/project_name.dir/src/solid.cpp.o: ../src/solid.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/olga/Pulpit/Programowanie/dron/prj/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/project_name.dir/src/solid.cpp.o"
-	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/project_name.dir/src/solid.cpp.o -c /home/olga/Pulpit/Programowanie/dron/prj/src/solid.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/olga/Pulpit/Programowanie/dron2/prj/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/project_name.dir/src/solid.cpp.o"
+	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/project_name.dir/src/solid.cpp.o -c /home/olga/Pulpit/Programowanie/dron2/prj/src/solid.cpp
 
 CMakeFiles/project_name.dir/src/solid.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/project_name.dir/src/solid.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/olga/Pulpit/Programowanie/dron/prj/src/solid.cpp > CMakeFiles/project_name.dir/src/solid.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/olga/Pulpit/Programowanie/dron2/prj/src/solid.cpp > CMakeFiles/project_name.dir/src/solid.cpp.i
 
 CMakeFiles/project_name.dir/src/solid.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/project_name.dir/src/solid.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/olga/Pulpit/Programowanie/dron/prj/src/solid.cpp -o CMakeFiles/project_name.dir/src/solid.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/olga/Pulpit/Programowanie/dron2/prj/src/solid.cpp -o CMakeFiles/project_name.dir/src/solid.cpp.s
 
 CMakeFiles/project_name.dir/src/water.cpp.o: CMakeFiles/project_name.dir/flags.make
 CMakeFiles/project_name.dir/src/water.cpp.o: ../src/water.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/olga/Pulpit/Programowanie/dron/prj/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/project_name.dir/src/water.cpp.o"
-	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/project_name.dir/src/water.cpp.o -c /home/olga/Pulpit/Programowanie/dron/prj/src/water.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/olga/Pulpit/Programowanie/dron2/prj/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/project_name.dir/src/water.cpp.o"
+	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/project_name.dir/src/water.cpp.o -c /home/olga/Pulpit/Programowanie/dron2/prj/src/water.cpp
 
 CMakeFiles/project_name.dir/src/water.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/project_name.dir/src/water.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/olga/Pulpit/Programowanie/dron/prj/src/water.cpp > CMakeFiles/project_name.dir/src/water.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/olga/Pulpit/Programowanie/dron2/prj/src/water.cpp > CMakeFiles/project_name.dir/src/water.cpp.i
 
 CMakeFiles/project_name.dir/src/water.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/project_name.dir/src/water.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/olga/Pulpit/Programowanie/dron/prj/src/water.cpp -o CMakeFiles/project_name.dir/src/water.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/olga/Pulpit/Programowanie/dron2/prj/src/water.cpp -o CMakeFiles/project_name.dir/src/water.cpp.s
 
 # Object files for target project_name
 project_name_OBJECTS = \
+"CMakeFiles/project_name.dir/src/MatrixRot.cpp.o" \
 "CMakeFiles/project_name.dir/src/bottom.cpp.o" \
 "CMakeFiles/project_name.dir/src/cuboid.cpp.o" \
 "CMakeFiles/project_name.dir/src/gnuplot_link.cpp.o" \
 "CMakeFiles/project_name.dir/src/main.cpp.o" \
 "CMakeFiles/project_name.dir/src/mainObject.cpp.o" \
-"CMakeFiles/project_name.dir/src/scene.cpp.o" \
+"CMakeFiles/project_name.dir/src/obstacle.cpp.o" \
+"CMakeFiles/project_name.dir/src/rectangle.cpp.o" \
+"CMakeFiles/project_name.dir/src/rod.cpp.o" \
 "CMakeFiles/project_name.dir/src/solid.cpp.o" \
 "CMakeFiles/project_name.dir/src/water.cpp.o"
 
 # External object files for target project_name
 project_name_EXTERNAL_OBJECTS =
 
+project_name: CMakeFiles/project_name.dir/src/MatrixRot.cpp.o
 project_name: CMakeFiles/project_name.dir/src/bottom.cpp.o
 project_name: CMakeFiles/project_name.dir/src/cuboid.cpp.o
 project_name: CMakeFiles/project_name.dir/src/gnuplot_link.cpp.o
 project_name: CMakeFiles/project_name.dir/src/main.cpp.o
 project_name: CMakeFiles/project_name.dir/src/mainObject.cpp.o
-project_name: CMakeFiles/project_name.dir/src/scene.cpp.o
+project_name: CMakeFiles/project_name.dir/src/obstacle.cpp.o
+project_name: CMakeFiles/project_name.dir/src/rectangle.cpp.o
+project_name: CMakeFiles/project_name.dir/src/rod.cpp.o
 project_name: CMakeFiles/project_name.dir/src/solid.cpp.o
 project_name: CMakeFiles/project_name.dir/src/water.cpp.o
 project_name: CMakeFiles/project_name.dir/build.make
 project_name: CMakeFiles/project_name.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/olga/Pulpit/Programowanie/dron/prj/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable project_name"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/olga/Pulpit/Programowanie/dron2/prj/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX executable project_name"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/project_name.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -198,6 +243,6 @@ CMakeFiles/project_name.dir/clean:
 .PHONY : CMakeFiles/project_name.dir/clean
 
 CMakeFiles/project_name.dir/depend:
-	cd /home/olga/Pulpit/Programowanie/dron/prj/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/olga/Pulpit/Programowanie/dron/prj /home/olga/Pulpit/Programowanie/dron/prj /home/olga/Pulpit/Programowanie/dron/prj/cmake-build-debug /home/olga/Pulpit/Programowanie/dron/prj/cmake-build-debug /home/olga/Pulpit/Programowanie/dron/prj/cmake-build-debug/CMakeFiles/project_name.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/olga/Pulpit/Programowanie/dron2/prj/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/olga/Pulpit/Programowanie/dron2/prj /home/olga/Pulpit/Programowanie/dron2/prj /home/olga/Pulpit/Programowanie/dron2/prj/cmake-build-debug /home/olga/Pulpit/Programowanie/dron2/prj/cmake-build-debug /home/olga/Pulpit/Programowanie/dron2/prj/cmake-build-debug/CMakeFiles/project_name.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/project_name.dir/depend
 

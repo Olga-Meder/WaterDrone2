@@ -1,17 +1,18 @@
-#include "water.hh"
+
+#include "rod.hh"
 #include <fstream>
 #include <iostream>
-#include "mainObject.hh"
+
 using namespace std;
 
 
-Water::Water()
+Rod::Rod() // wczytanie pliku modelowego
 {
     ifstream inputFile;
-    inputFile.open(kModelWater);
+    inputFile.open( kModelRod);
     if(!inputFile.is_open())
     {
-        cerr << "Unable to load model Water file!"
+        cerr << "Unable to load model Cuboid file!"
              << endl;
         return;
     }
@@ -19,18 +20,19 @@ Water::Water()
     Vector3D point;
     while(inputFile >> point)
     {
-        points.push_back(point);
-        ++counter;
+        points.push_back(point); //tutaj points
+        ++counter; //dodawanie wektorów
     }
     inputFile.close();
 }
-void Water::draw(std::string filename) const
+
+void Rod::draw(std::string filename) const
 {
     ofstream outputFile;
     outputFile.open(filename);
     if(!outputFile.is_open())
     {
-        cerr << "Unable to open water file!" << endl;
+        cerr << "Unable to open drone file!" << endl;
         return;
     }
     for(int i = 0; i < points.size(); ++i)
