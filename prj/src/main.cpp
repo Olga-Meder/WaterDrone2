@@ -30,9 +30,9 @@ int main()
     Cuboid cuboid;
     Water water;
     Bottom bottom;
-    Rod rod;
-    Rectangle rectangle;
-    Solid solid;
+ //   Rod rod;
+   // Rectangle rectangle;
+   // Solid solid;
 
     PzG::GnuplotLink link; // Ta zmienna jest potrzebna do wizualizacji
 
@@ -52,10 +52,24 @@ int main()
     cuboid.draw(kDroneFile);
     water.draw(kWaterFile);
     bottom.draw(kBottomFile);
-    rod.draw(kRodFile);
-    rectangle.draw(kRectangleFile);
-    solid.draw(kSolidFile);
+ //   rod.draw(kRodFile);
+ //   rectangle.draw(kRectangleFile);
+ //   solid.draw(kSolidFile);
 
+//  WSKAŹNIKI NA PRZESZKODY
+    shared_ptr<MainObject> r = make_shared<Rod>(); //wskaźnik na pręt (rod)
+    shared_ptr<MainObject> rec = make_shared<Rectangle>(); //wskaźnik na prostokąt (rectangle)
+    shared_ptr<MainObject> s = make_shared<Solid>(); //wskaźnik na bryłę (solid)
+    r->draw(kRodFile);
+    rec->draw(kRectangleFile);
+    s->draw(kSolidFile);
+//  WEKTOR SHARED POINTERÓW
+    vector<shared_ptr<MainObject>> obstacles; // lista wskaźników na przeszkody
+
+//  DODANIE WEKTORÓW DO LISTY
+    obstacles.push_back(r);
+    obstacles.push_back(rec);
+    obstacles.push_back(s);
 
     link.Draw(); // <- Tutaj gnuplot rysuje, to co zapisaliśmy do pliku
 
@@ -107,6 +121,7 @@ int main()
             change[0]=1*cos(rad); //współrzędne kartezjańskie
             change[1]=0;
             change[2]=1*sin(rad);
+
 //          PĘTLA TWORZĄCA ANIMACJĘ
             for(int i=0;i<distance;i++)
             {
