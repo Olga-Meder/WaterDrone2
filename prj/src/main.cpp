@@ -30,9 +30,6 @@ int main()
     Cuboid cuboid;
     Water water;
     Bottom bottom;
- //   Rod rod;
-   // Rectangle rectangle;
-   // Solid solid;
 
     PzG::GnuplotLink link; // Ta zmienna jest potrzebna do wizualizacji
 
@@ -52,17 +49,17 @@ int main()
     cuboid.draw(kDroneFile);
     water.draw(kWaterFile);
     bottom.draw(kBottomFile);
- //   rod.draw(kRodFile);
- //   rectangle.draw(kRectangleFile);
- //   solid.draw(kSolidFile);
 
 //  WSKAŹNIKI NA PRZESZKODY
     shared_ptr<MainObject> r = make_shared<Rod>(); //wskaźnik na pręt (rod)
     shared_ptr<MainObject> rec = make_shared<Rectangle>(); //wskaźnik na prostokąt (rectangle)
     shared_ptr<MainObject> s = make_shared<Solid>(); //wskaźnik na bryłę (solid)
+
+//  RYSOWANIE PRZESZKÓD
     r->draw(kRodFile);
     rec->draw(kRectangleFile);
     s->draw(kSolidFile);
+
 //  WEKTOR SHARED POINTERÓW
     vector<shared_ptr<MainObject>> obstacles; // lista wskaźników na przeszkody
 
@@ -75,6 +72,10 @@ int main()
 
     cout << "Naciśnij ENTER, aby kontynuowac" << endl;
     cin.ignore(100000, '\n');
+
+    Vector3D t;
+    t=r->Max();
+    cout<<t<<endl;
     /*****************************************************************************************
      * MENU
      */

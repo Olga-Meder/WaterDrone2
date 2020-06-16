@@ -12,5 +12,6 @@ public:
 
     virtual ~Obstacle() {}; //wirtualny destruktor
     virtual void getName() const =0; //tak samo jak na zajęciach
-
+    virtual Vector3D Max() const override ;
+    virtual Vector3D Min() const override ;
 };

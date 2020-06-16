@@ -44,6 +44,10 @@ CMakeFiles/project_name.dir/src/main.cpp.o
 CMakeFiles/project_name.dir/src/mainObject.cpp.o
  /home/olga/Pulpit/Programowanie/dron2/prj/src/mainObject.cpp
 CMakeFiles/project_name.dir/src/obstacle.cpp.o
+ ../inc/Size.hh
+ ../inc/Vector.hh
+ ../inc/mainObject.hh
+ ../inc/obstacle.hh
  /home/olga/Pulpit/Programowanie/dron2/prj/src/obstacle.cpp
 CMakeFiles/project_name.dir/src/rectangle.cpp.o
  ../inc/Size.hh
