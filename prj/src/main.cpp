@@ -9,6 +9,9 @@
 #include <cmath>
 #include "mainObject.hh"
 #include "Vector.hh"
+#include "rod.hh"
+#include "rectangle.hh"
+#include "solid.hh"
 
 constexpr int SLEEP= 10000000;
 using namespace std;
@@ -18,13 +21,18 @@ using namespace std::this_thread;
 const string kDroneFile("solid/drone.dat");
 const string kWaterFile("solid/water2.dat");
 const string kBottomFile("solid/bottom2.dat");
-
+const string kRodFile("solid/rod2.dat");
+const string kRectangleFile("solid/rectangle2.dat");
+const string kSolidFile("solid/solid2.dat");
 int main()
 {
 //  STWORZONE NOWE OBIEKTY
     Cuboid cuboid;
     Water water;
     Bottom bottom;
+    Rod rod;
+    Rectangle rectangle;
+    Solid solid;
 
     PzG::GnuplotLink link; // Ta zmienna jest potrzebna do wizualizacji
 
@@ -35,12 +43,19 @@ int main()
     link.AddFilename(kDroneFile.c_str(), PzG::LS_CONTINUOUS, 1);
     link.AddFilename(kWaterFile.c_str(), PzG::LS_CONTINUOUS, 1);
     link.AddFilename(kBottomFile.c_str(), PzG::LS_CONTINUOUS, 1);
+    link.AddFilename(kRodFile.c_str(), PzG::LS_CONTINUOUS, 1);
+    link.AddFilename(kRectangleFile.c_str(), PzG::LS_CONTINUOUS, 1);
+    link.AddFilename(kSolidFile.c_str(), PzG::LS_CONTINUOUS, 1);
     link.SetDrawingMode(PzG::DM_3D);
 
 //  ZAPISANIE PUNKTÓW DO PLIKÓW
     cuboid.draw(kDroneFile);
     water.draw(kWaterFile);
     bottom.draw(kBottomFile);
+    rod.draw(kRodFile);
+    rectangle.draw(kRectangleFile);
+    solid.draw(kSolidFile);
+
 
     link.Draw(); // <- Tutaj gnuplot rysuje, to co zapisaliśmy do pliku
 

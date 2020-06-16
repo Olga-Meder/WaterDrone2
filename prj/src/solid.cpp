@@ -8,7 +8,7 @@ using namespace std;
 Solid::Solid() // wczytanie pliku modelowego
 {
     ifstream inputFile;
-    inputFile.open( kModelSolid);
+    inputFile.open(kModelSolid);
     if(!inputFile.is_open())
     {
         cerr << "Unable to load model Cuboid file!"

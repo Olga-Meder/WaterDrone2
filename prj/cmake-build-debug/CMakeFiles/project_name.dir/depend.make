@@ -34,6 +34,10 @@ CMakeFiles/project_name.dir/src/main.cpp.o: ../inc/bottom.hh
 CMakeFiles/project_name.dir/src/main.cpp.o: ../inc/cuboid.hh
 CMakeFiles/project_name.dir/src/main.cpp.o: ../inc/gnuplot_link.hh
 CMakeFiles/project_name.dir/src/main.cpp.o: ../inc/mainObject.hh
+CMakeFiles/project_name.dir/src/main.cpp.o: ../inc/obstacle.hh
+CMakeFiles/project_name.dir/src/main.cpp.o: ../inc/rectangle.hh
+CMakeFiles/project_name.dir/src/main.cpp.o: ../inc/rod.hh
+CMakeFiles/project_name.dir/src/main.cpp.o: ../inc/solid.hh
 CMakeFiles/project_name.dir/src/main.cpp.o: ../inc/water.hh
 CMakeFiles/project_name.dir/src/main.cpp.o: ../src/main.cpp
 

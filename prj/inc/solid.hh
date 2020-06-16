@@ -3,7 +3,7 @@
 #include "obstacle.hh"
 #include <string>
 
-const std::string kModelSolid("solid/model.dat"); //zmienić to później na inny prostopadłościan
+const std::string kModelSolid("solid/solid.dat"); //zmienić to później na inny prostopadłościan
 class Solid: public Obstacle
 {
     //klasa bryła, która ma za zadanie zostać nazwana i narysowana (później kolizja)

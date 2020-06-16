@@ -35,6 +35,10 @@ CMakeFiles/project_name.dir/src/main.cpp.o
  ../inc/cuboid.hh
  ../inc/gnuplot_link.hh
  ../inc/mainObject.hh
+ ../inc/obstacle.hh
+ ../inc/rectangle.hh
+ ../inc/rod.hh
+ ../inc/solid.hh
  ../inc/water.hh
  /home/olga/Pulpit/Programowanie/dron2/prj/src/main.cpp
 CMakeFiles/project_name.dir/src/mainObject.cpp.o
