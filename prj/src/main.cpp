@@ -13,7 +13,8 @@
 #include "rectangle.hh"
 #include "solid.hh"
 
-constexpr int SLEEP= 10000000;
+constexpr int SLEEP= 10000000; //stała potrzebna do funkcji sleep_for
+constexpr int FRAME=50; //ilość klatek poczas animacji
 using namespace std;
 using namespace std::chrono;
 using namespace std::this_thread;
@@ -73,9 +74,7 @@ int main()
     cout << "Naciśnij ENTER, aby kontynuowac" << endl;
     cin.ignore(100000, '\n');
 
-  /*  Vector3D t;
-    t=r->Max();
-    cout<<t<<endl; */
+
     /*****************************************************************************************
      * MENU
      */
@@ -83,8 +82,7 @@ int main()
     double a; //wybór kąta
     double angle_rot; //wybór kąta rotacji
     double distance=1; //dystans do pokonania
-    int c=(MainObject::counter)/distance; //zliczanie aktualnych wektorów
-    int allCounter=0; // zmienna opisująca łączną sumę obiektów wraz z animacją
+
     do
     {
         cout << "MENU:" << endl;
@@ -92,21 +90,18 @@ int main()
         cout<< "r - ruch" << endl;
         cout<< "k - koniec" << endl;
 
-        cout << "aktualna liczba obiektów(aktualnych): " <<c<< endl;
-        allCounter=allCounter+MainObject::counter;
-        cout << "łączna liczba obiektów (liczy też podczas animacji): " <<allCounter<<endl;
         cin >> choice;
 
         if(choice=='o')
         {
             cout << "Podaj obrót w stopniach: " << endl;
             cin >> angle_rot;
-            cuboid.angle += angle_rot;
+            cuboid.angle += angle_rot; //przypisanie do kąta globalnego
 
 //          PĘTLA TWORZĄCA ANIMACJĘ
-            for(int i=0;i<50;i++) //użytkownik decyduje ile razy się powtórzy
+            for(int i=0;i<FRAME;i++)
             {
-                cuboid.rotateZ(angle_rot/50); // rotacja o jeden stopień
+                cuboid.rotateZ(angle_rot/FRAME);
                 sleep_for(nanoseconds(SLEEP));
                 cuboid.draw(kDroneFile);
                 link.Draw();
@@ -120,17 +115,18 @@ int main()
             cout << "Podaj kąt wznoszenia/opadania w stopniach" << endl;
             cin >> a;
             double rad=a*M_PI/180; //zamiana na radiany
-            Vector3D change; //wektor zmiany
+            Vector3D change; //wektor zmiany przesunięcia
             MatrixRot rot('Z',angle_rot);
             change[0]=distance*cos(rad); //współrzędne kartezjańskie
             change[1]=0;
             change[2]=distance*sin(rad);
             change= rot*change;
+
 //          PĘTLA TWORZĄCA ANIMACJĘ
-            for(int i=0;i<50;i++)
+            for(int i=0;i<FRAME;i++)
             {
-                int check=0;
-                cuboid.translate(change/50); //translacja
+                int check=0; //zmienna służąca do sprawdzenia kolizji
+                cuboid.translate(change/FRAME); //translacja
                 sleep_for(nanoseconds(SLEEP));
                 cuboid.draw(kDroneFile);
                 link.Draw();
@@ -146,9 +142,10 @@ int main()
                     distance=0;
                 }
 //              SPRAWDZENIE KOLIZJI Z PRZESZKODAMI
-                for(int j=0; j<obstacles.size(); j++)
+
+                for(int j=0; j<obstacles.size(); j++) //pętla z przeszkodami
                 {
-                    check = cuboid.checkObstacleCollision(*obstacles[j]);
+                    check = cuboid.checkObstacleCollision(*obstacles[j]); //wywołanie sprawdzenia kolizji
                     if(check == 1)
                     {
                         cout<< "Uwaga ";

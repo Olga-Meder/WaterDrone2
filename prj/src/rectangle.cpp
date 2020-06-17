@@ -11,7 +11,7 @@ Rectangle::Rectangle() // wczytanie pliku modelowego
     inputFile.open( kModelRectangle);
     if(!inputFile.is_open())
     {
-        cerr << "Unable to load model Cuboid file!"
+        cerr << "Unable to load model Rectangle file!"
              << endl;
         return;
     }

@@ -54,42 +54,15 @@ void Cuboid::rotateZ(double angle)
     rot_matrix.transpose(); //w szablonie zapisuje macierz transponowaną, tutaj muszę odwrócić
     for (int i = 0; i < points.size(); ++i)
     {
-     //   cout<<rot_matrix<<endl;
-     //cout<<points[i];
         points[i] = rot_matrix * points[i];
-     //   cout<<points[i];
     }
 }
 
-/*void Cuboid::rotateY(double kat) {
-
-    MatrixRot rot_matrix('Y', kat);
- //   rot_matrix.transpose();
-    for (int i = 0; i < points.size(); ++i) {
-
-        cout << points[i];
-        points[i] = rot_matrix * points[i];
-        cout << points[i];
-    }
-}
-
-void Cuboid::rotateX(double kat) {
-
-    MatrixRot rot_matrix('X', kat);
- //   rot_matrix.transpose();
-    for (int i = 0; i < points.size(); ++i) {
-
-        cout << points[i];
-        points[i] = rot_matrix * points[i];
-        cout << points[i];
-    }
-} */
 int Cuboid::checkCollision()
 {
     Bottom b;
     Water w;
     int result;
-   // cout<< translation;
     if (translation[2] <= b.getDepth()+20) //te punkty wyznaczone doświadczalnie
     {
         result=1;
@@ -110,8 +83,8 @@ int Cuboid::checkObstacleCollision(MainObject &o)
     Vector3D cuboidMin = this->Min();
     int result;
 
-//  Sprawdzanie czy przeszkoda i prostopadłośćian nachodzą na siebie
-    if((cuboidMax[0] < obstacleMax[0] && cuboidMin[0] > obstacleMin[0]) &&
+//  Sprawdzanie czy przeszkoda i prostopadłośćian nachodzą na siebie poprzez maksymalne i minimalne wierzchołki
+    if((cuboidMin[0] < obstacleMax[0] && cuboidMax[0] > obstacleMin[0]) &&
        (cuboidMax[1] > obstacleMin[1] && cuboidMin[1] < obstacleMax[1] ) &&
        (cuboidMin[2] < obstacleMax[2] && cuboidMax[2] > obstacleMin[2]))
     {
@@ -119,3 +92,4 @@ int Cuboid::checkObstacleCollision(MainObject &o)
         return result;
     }
 }
+

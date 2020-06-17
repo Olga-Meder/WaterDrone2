@@ -17,14 +17,16 @@ const std::string kModelCuboid("solid/model.dat");
 class Cuboid: public MainObject{
 
 public:
-    double angle=0;
+
+    double angle=0; //kąt o jaki prostopadłościan się obrócił
+
 /**
  * @brief Konstruktor nowych prostopadłościanów, czyta z pliku kModelCuboid
  *
  */
     Cuboid();
 /**
- * @brief Konstruktor nowych prostopadłościanów, odejmuje licznik
+ * @brief Destruktor nowych prostopadłościanów, odejmuje licznik
  *
  */
     ~Cuboid() {--counter;}
@@ -32,7 +34,7 @@ public:
 /**
  * @brief metoda, która zapisuje do pliku punkty po translacji
  *
- * @param filename - plik, do któ©ego zapisujemy
+ * @param filename - plik, do którego zapisujemy
  */
     virtual void draw(std::string filename) const override;
 
@@ -53,9 +55,6 @@ public:
  */
     void rotateZ(double angle);
 
-//    zakomentowane, bo w tej części zadania, nie są potrzebne
-//    void rotateY(double kat);
-//    void rotateX(double kat);
 
 /**
  * @brief Metoda, która sprawdza, czy nie ma kolizcji z dnem i powierzchnią
@@ -64,9 +63,17 @@ public:
  */
     int checkCollision();
 
+/**
+ * @brief Metoda, która sprawdza, czy nie ma kolizcji z przeszkodami
+ * (1 -kolizja z przszkodą)
+ * @return int
+ */
+    int checkObstacleCollision(MainObject &o); //MUSI BYĆ REFERENCJA BO TO KLASA ABSTRAKCYJNA
 
-    int checkObstacleCollision(MainObject &o);
-
+/**
+* @brief Nadpisana metoda z metody czysto wirtualnej w mainObject nadająca nazwę obiektu
+*
+*/
     virtual void getName() const override
     {
         std::cout<< "Prostopadłościan";

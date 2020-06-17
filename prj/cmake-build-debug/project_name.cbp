@@ -143,9 +143,6 @@
 		<Unit filename="/home/olga/Pulpit/Programowanie/dron2/prj/src/mainObject.cpp">
 			<Option target="project_name"/>
 		</Unit>
-		<Unit filename="/home/olga/Pulpit/Programowanie/dron2/prj/src/obstacle.cpp">
-			<Option target="project_name"/>
-		</Unit>
 		<Unit filename="/home/olga/Pulpit/Programowanie/dron2/prj/src/rectangle.cpp">
 			<Option target="project_name"/>
 		</Unit>

@@ -285,33 +285,6 @@ src/mainObject.cpp.s:
 	$(MAKE) -f CMakeFiles/project_name.dir/build.make CMakeFiles/project_name.dir/src/mainObject.cpp.s
 .PHONY : src/mainObject.cpp.s
 
-src/obstacle.o: src/obstacle.cpp.o
-
-.PHONY : src/obstacle.o
-
-# target to build an object file
-src/obstacle.cpp.o:
-	$(MAKE) -f CMakeFiles/project_name.dir/build.make CMakeFiles/project_name.dir/src/obstacle.cpp.o
-.PHONY : src/obstacle.cpp.o
-
-src/obstacle.i: src/obstacle.cpp.i
-
-.PHONY : src/obstacle.i
-
-# target to preprocess a source file
-src/obstacle.cpp.i:
-	$(MAKE) -f CMakeFiles/project_name.dir/build.make CMakeFiles/project_name.dir/src/obstacle.cpp.i
-.PHONY : src/obstacle.cpp.i
-
-src/obstacle.s: src/obstacle.cpp.s
-
-.PHONY : src/obstacle.s
-
-# target to generate assembly for a file
-src/obstacle.cpp.s:
-	$(MAKE) -f CMakeFiles/project_name.dir/build.make CMakeFiles/project_name.dir/src/obstacle.cpp.s
-.PHONY : src/obstacle.cpp.s
-
 src/rectangle.o: src/rectangle.cpp.o
 
 .PHONY : src/rectangle.o
@@ -447,9 +420,6 @@ help:
 	@echo "... src/mainObject.o"
 	@echo "... src/mainObject.i"
 	@echo "... src/mainObject.s"
-	@echo "... src/obstacle.o"
-	@echo "... src/obstacle.i"
-	@echo "... src/obstacle.s"
 	@echo "... src/rectangle.o"
 	@echo "... src/rectangle.i"
 	@echo "... src/rectangle.s"

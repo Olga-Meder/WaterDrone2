@@ -46,8 +46,6 @@ CMakeFiles/project_name.dir/src/mainObject.cpp.o: ../inc/Vector.hh
 CMakeFiles/project_name.dir/src/mainObject.cpp.o: ../inc/mainObject.hh
 CMakeFiles/project_name.dir/src/mainObject.cpp.o: ../src/mainObject.cpp
 
-CMakeFiles/project_name.dir/src/obstacle.cpp.o: ../src/obstacle.cpp
-
 CMakeFiles/project_name.dir/src/rectangle.cpp.o: ../inc/Size.hh
 CMakeFiles/project_name.dir/src/rectangle.cpp.o: ../inc/Vector.hh
 CMakeFiles/project_name.dir/src/rectangle.cpp.o: ../inc/mainObject.hh

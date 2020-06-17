@@ -5,11 +5,25 @@
 
 using std::string;
 
+
+/**
+ * @brief Klasa abstrakcyjna przeszkoda, dziedziczy z MainObject
+ *
+ */
 class Obstacle: public MainObject
 {
-    //klasa przeszkód (absrakcyjna) z funkcją nazw tych przeszkód (metoda czysto wirtualna)
+
 public:
 
-    virtual ~Obstacle() {}; //wirtualny destruktor
-    virtual void getName() const =0; //tak samo jak na zajęciach
+/**
+ * @brief Destruktor przeszkody
+ *
+ */
+    virtual ~Obstacle() {};
+
+/**
+* @brief Metoda czysto wirtualna nadająca nazwę obiektu
+*
+*/
+    virtual void getName() const =0;
 };

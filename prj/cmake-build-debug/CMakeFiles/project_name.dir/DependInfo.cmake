@@ -10,7 +10,6 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/olga/Pulpit/Programowanie/dron2/prj/src/gnuplot_link.cpp" "/home/olga/Pulpit/Programowanie/dron2/prj/cmake-build-debug/CMakeFiles/project_name.dir/src/gnuplot_link.cpp.o"
   "/home/olga/Pulpit/Programowanie/dron2/prj/src/main.cpp" "/home/olga/Pulpit/Programowanie/dron2/prj/cmake-build-debug/CMakeFiles/project_name.dir/src/main.cpp.o"
   "/home/olga/Pulpit/Programowanie/dron2/prj/src/mainObject.cpp" "/home/olga/Pulpit/Programowanie/dron2/prj/cmake-build-debug/CMakeFiles/project_name.dir/src/mainObject.cpp.o"
-  "/home/olga/Pulpit/Programowanie/dron2/prj/src/obstacle.cpp" "/home/olga/Pulpit/Programowanie/dron2/prj/cmake-build-debug/CMakeFiles/project_name.dir/src/obstacle.cpp.o"
   "/home/olga/Pulpit/Programowanie/dron2/prj/src/rectangle.cpp" "/home/olga/Pulpit/Programowanie/dron2/prj/cmake-build-debug/CMakeFiles/project_name.dir/src/rectangle.cpp.o"
   "/home/olga/Pulpit/Programowanie/dron2/prj/src/rod.cpp" "/home/olga/Pulpit/Programowanie/dron2/prj/cmake-build-debug/CMakeFiles/project_name.dir/src/rod.cpp.o"
   "/home/olga/Pulpit/Programowanie/dron2/prj/src/solid.cpp" "/home/olga/Pulpit/Programowanie/dron2/prj/cmake-build-debug/CMakeFiles/project_name.dir/src/solid.cpp.o"

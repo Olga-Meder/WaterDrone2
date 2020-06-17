@@ -5,7 +5,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/project_name.dir/src/gnuplot_link.cpp.o"
   "CMakeFiles/project_name.dir/src/main.cpp.o"
   "CMakeFiles/project_name.dir/src/mainObject.cpp.o"
-  "CMakeFiles/project_name.dir/src/obstacle.cpp.o"
   "CMakeFiles/project_name.dir/src/rectangle.cpp.o"
   "CMakeFiles/project_name.dir/src/rod.cpp.o"
   "CMakeFiles/project_name.dir/src/solid.cpp.o"

@@ -38,6 +38,10 @@ public:
  */
     double getDepth(){ return depth;}
 
+/**
+* @brief Nadpisana metoda z metody czysto wirtualnej w mainObject nadająca nazwę obiektu
+*
+*/
     virtual void getName() const override
     {
         std::cout<< "Dno";

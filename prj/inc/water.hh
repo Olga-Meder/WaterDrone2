@@ -36,6 +36,10 @@ public:
  */
     double getHeight(){return height;}
 
+/**
+* @brief Nadpisana metoda z metody czysto wirtualnej w mainObject nadająca nazwę obiektu
+*
+*/
     virtual void getName() const override
     {
         std::cout<< "Water";
