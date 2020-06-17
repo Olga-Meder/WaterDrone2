@@ -1,0 +1,6 @@
+<map id="Obstacle" name="Obstacle">
+<area shape="rect" id="node3" href="$class_rectangle.html" title="Klasa prostokąt, dziedziczy z Obstacle. " alt="" coords="5,155,87,181"/>
+<area shape="rect" id="node4" href="$class_rod.html" title="Klasa pręt, dziedziczy z Obstacle. " alt="" coords="111,155,157,181"/>
+<area shape="rect" id="node5" href="$class_solid.html" title="Klasa bryła, dziedziczy z Obstacle. " alt="" coords="182,155,233,181"/>
+<area shape="rect" id="node2" href="$class_main_object.html" title="Główna klasa abstrakcyjna, służąca do dziedziczenia obiektów. " alt="" coords="90,5,178,32"/>
+</map>

@@ -1,0 +1,9 @@
+<map id="MainObject" name="MainObject">
+<area shape="rect" id="node2" href="$class_bottom.html" title="Klasa dno, dziedziczy z MainObject. " alt="" coords="5,80,69,107"/>
+<area shape="rect" id="node3" href="$class_cuboid.html" title="Klasa prostopadłościan, dziedziczy z MainObject. " alt="" coords="94,80,157,107"/>
+<area shape="rect" id="node4" href="$class_obstacle.html" title="Klasa abstrakcyjna przeszkoda, dziedziczy z MainObject. " alt="" coords="181,80,256,107"/>
+<area shape="rect" id="node8" href="$class_water.html" title="Water" alt="" coords="281,80,338,107"/>
+<area shape="rect" id="node5" href="$class_rectangle.html" title="Klasa prostokąt, dziedziczy z Obstacle. " alt="" coords="90,155,171,181"/>
+<area shape="rect" id="node6" href="$class_rod.html" title="Klasa pręt, dziedziczy z Obstacle. " alt="" coords="195,155,242,181"/>
+<area shape="rect" id="node7" href="$class_solid.html" title="Klasa bryła, dziedziczy z Obstacle. " alt="" coords="267,155,317,181"/>
+</map>
