@@ -37,4 +37,9 @@ public:
  * @return double
  */
     double getDepth(){ return depth;}
+
+    virtual void getName() const override
+    {
+        std::cout<< "Dno";
+    }
 };

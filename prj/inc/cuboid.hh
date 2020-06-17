@@ -17,6 +17,7 @@ const std::string kModelCuboid("solid/model.dat");
 class Cuboid: public MainObject{
 
 public:
+    double angle=0;
 /**
  * @brief Konstruktor nowych prostopadłościanów, czyta z pliku kModelCuboid
  *
@@ -62,6 +63,14 @@ public:
  * @return int
  */
     int checkCollision();
+
+
+    int checkObstacleCollision(MainObject &o);
+
+    virtual void getName() const override
+    {
+        std::cout<< "Prostopadłościan";
+    }
 };
 
 

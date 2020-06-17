@@ -101,3 +101,21 @@ int Cuboid::checkCollision()
         return result;
     }
 }
+
+int Cuboid::checkObstacleCollision(MainObject &o)
+{
+    Vector3D obstacleMax = o.Max();
+    Vector3D obstacleMin = o.Min();
+    Vector3D cuboidMax = this->Max();
+    Vector3D cuboidMin = this->Min();
+    int result;
+
+//  Sprawdzanie czy przeszkoda i prostopadłośćian nachodzą na siebie
+    if((cuboidMax[0] < obstacleMax[0] && cuboidMin[0] > obstacleMin[0]) &&
+       (cuboidMax[1] > obstacleMin[1] && cuboidMin[1] < obstacleMax[1] ) &&
+       (cuboidMin[2] < obstacleMax[2] && cuboidMax[2] > obstacleMin[2]))
+    {
+        result=1;
+        return result;
+    }
+}

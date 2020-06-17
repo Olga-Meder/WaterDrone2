@@ -27,7 +27,7 @@ public:
  * @brief Pusty destruktor obiektór MainObject
  *
  */
-    ~MainObject() {};
+    virtual ~MainObject() {};
 
 /**
  * @brief  czysto wirtualna metoda służąca do rysowanie obiektów
@@ -38,7 +38,8 @@ public:
 
 // licznik ilości narysowanych wektorów
      static int counter;
-//metody czysto wirtualne, do zwracania max i min potrzebne do kolizji
-    virtual Vector3D Max() const=0;
-    virtual Vector3D Min() const=0;
+
+    Vector3D Max() const;
+    Vector3D Min() const;
+    virtual void getName() const =0; //tak samo jak na zajęciach
 };

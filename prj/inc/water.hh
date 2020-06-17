@@ -35,4 +35,9 @@ public:
  * @return double
  */
     double getHeight(){return height;}
+
+    virtual void getName() const override
+    {
+        std::cout<< "Water";
+    }
 };

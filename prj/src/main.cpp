@@ -73,9 +73,9 @@ int main()
     cout << "Naciśnij ENTER, aby kontynuowac" << endl;
     cin.ignore(100000, '\n');
 
-    Vector3D t;
+  /*  Vector3D t;
     t=r->Max();
-    cout<<t<<endl;
+    cout<<t<<endl; */
     /*****************************************************************************************
      * MENU
      */
@@ -96,15 +96,17 @@ int main()
         allCounter=allCounter+MainObject::counter;
         cout << "łączna liczba obiektów (liczy też podczas animacji): " <<allCounter<<endl;
         cin >> choice;
+
         if(choice=='o')
         {
             cout << "Podaj obrót w stopniach: " << endl;
             cin >> angle_rot;
+            cuboid.angle += angle_rot;
 
 //          PĘTLA TWORZĄCA ANIMACJĘ
-            for(int i=0;i<angle_rot;i++) //użytkownik decyduje ile razy się powtórzy
+            for(int i=0;i<50;i++) //użytkownik decyduje ile razy się powtórzy
             {
-                cuboid.rotateZ(1); // rotacja o jeden stopień
+                cuboid.rotateZ(angle_rot/50); // rotacja o jeden stopień
                 sleep_for(nanoseconds(SLEEP));
                 cuboid.draw(kDroneFile);
                 link.Draw();
@@ -119,14 +121,16 @@ int main()
             cin >> a;
             double rad=a*M_PI/180; //zamiana na radiany
             Vector3D change; //wektor zmiany
-            change[0]=1*cos(rad); //współrzędne kartezjańskie
+            MatrixRot rot('Z',angle_rot);
+            change[0]=distance*cos(rad); //współrzędne kartezjańskie
             change[1]=0;
-            change[2]=1*sin(rad);
-
+            change[2]=distance*sin(rad);
+            change= rot*change;
 //          PĘTLA TWORZĄCA ANIMACJĘ
-            for(int i=0;i<distance;i++)
+            for(int i=0;i<50;i++)
             {
-                cuboid.translate(change); //translacja
+                int check=0;
+                cuboid.translate(change/50); //translacja
                 sleep_for(nanoseconds(SLEEP));
                 cuboid.draw(kDroneFile);
                 link.Draw();
@@ -141,6 +145,18 @@ int main()
                     cerr << "Uwaga, jesteś na powierzchni" << endl;
                     distance=0;
                 }
+//              SPRAWDZENIE KOLIZJI Z PRZESZKODAMI
+                for(int j=0; j<obstacles.size(); j++)
+                {
+                    check = cuboid.checkObstacleCollision(*obstacles[j]);
+                    if(check == 1)
+                    {
+                        cout<< "Uwaga ";
+                        obstacles[j]->getName();
+                    }
+                }
+
+
             }
         }
         else if(choice=='k')
